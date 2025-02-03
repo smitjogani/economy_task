@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Roboto", serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px 14px 6px 14px;
+    /* height: 113px; */
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: url('./assets/bg.jpg');
+    filter: hue-rotate(500);
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 36px;
+    color: white;
+    font-weight: 1000;
+    padding-left: 25px;
+}
+
+.nav-btn {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    font-weight: 500;
+    gap: 3px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    color: white;
+}
+
+.field-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hor-nav {
+    width: 7%;
+    height: 100%;
+    margin-top: 2%;
+    margin-left: 2%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 28px 4px;
+    align-items: center;
+}
+
+.item-container {
+    width: 93%;
+    height: 80%;
+    background-color: #fff;
+    margin: -2% 3% 2% 3%;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+li p{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.hnav-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.banner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 35%;
+    padding: 20px;
+    background: url('https://img.freepik.com/free-photo/beautiful-frame-with-paint-splashes_24972-1814.jpg?semt=ais_hybrid_sidr');
+    color: white;
+    border-radius: 10px;
+    margin: 16px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.gallery .gimg {
+    width: 310px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
